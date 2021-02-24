@@ -33,6 +33,7 @@ function Characters(chars){
 }
 
 function SearchCharacter(charts){ 
+    let p = document.createElement('p');
     srchChactr.addEventListener('click', (e) => {
         const nameChar = document.getElementById('input-name').value
     
@@ -47,6 +48,27 @@ function SearchCharacter(charts){
         e.preventDefault();
     })
     
+    nameChar.addEventListener('keyup', () => {
+        p.innerHTML = nameChar.value;
+        findChar.appendChild(p)
+
+        charts.map(chars => {
+            if(charts.indexOf(chars.name) === nameChar.value){
+                /*let p = document.createElement('p');
+                p.innerHTML = '<h3>Hay Coincidencias</h3>'
+                findChar.appendChild(p);*/
+                console.log('ok')
+            }else{
+               /* let p = document.createElement('p');
+                p.innerHTML = '<h3>No Hay Coincidencias</h3>'
+                findChar.appendChild(p);*/
+            }
+        })
+    })
+
+    charts.map(item => {
+        console.log(item.name)
+    })
 }
 
 
