@@ -57,26 +57,22 @@ html{
     color: coral
 }
 
-#find-char{
-    width: 60%;
-    height: 60px;
-    position: relative;
-    padding-bottom: 20px;
-    margin: 100px auto 0px auto;
-    box-shadow: 0px 0px 5px black;
-}
-
-#find-char p{
-    line-height: 40px;
-    text-align: center;
-}
 
 #box-characters{
     width: 85%;
-    margin: 60px auto;
+    min-height: 40vh;
+    margin: 180px auto;
     margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
+}
+
+#box-characters h2{
+    margin-top: 70px;
+    margin-left: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: gray;
 }
 
 #box-characters .boxChart{
