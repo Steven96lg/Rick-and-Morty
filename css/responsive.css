@@ -3,7 +3,10 @@
 
     #search{
         height: 60px;
+        width: 100%;
         display: block;
+        position: fixed;
+        top: 0px;
     }
 
     #search h1{
@@ -11,15 +14,25 @@
     }
 
     #search input[type="text"]{
-        margin-left: 2px;
-        margin-top: 15px;
-        width: 300px;
-        display: none;
+        width: 200px;
+        margin-top: 14px;
+        margin-left: 10px;
     }
 
-    #search button{
-        color: red;
-        margin-left: 10px;
-        position: relative;
+    #srch-chactr{
+        color: white;
+        margin-top: 0px;
+    }
+
+    #box-characters{
+        width: 100%;
+    }
+
+    #box-characters .boxChart{
+        width: 240px;
+        height: auto;
+        background: grey;
+        display: flex;
+        flex-direction: column;
     }
 }
