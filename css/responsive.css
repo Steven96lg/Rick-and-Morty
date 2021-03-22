@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 400px){
+
+    #search{
+        height: 60px;
+        display: block;
+    }
+
+    #search h1{
+        display: none;
+    }
+
+    #search input[type="text"]{
+        margin-left: 2px;
+        margin-top: 15px;
+        width: 300px;
+        display: none;
+    }
+
+    #search button{
+        color: red;
+        margin-left: 10px;
+        position: relative;
+    }
+}
